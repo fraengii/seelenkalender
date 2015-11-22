@@ -26,12 +26,13 @@ else:
         print("Ostersonntag ist der",os,"te März!",Jahr)
         tag = os
         mon = 3
-##
+        
+##Find out the week number of the first week after easter
 ersterTag = tag + 1
 t1 = "Die erste Woche beginnt mit dem Datum "
 t2 = "."
 tgesamt = t1 + str(ersterTag) + t2 + str(mon) + t2 + str(Jahr)
 print(tgesamt)
-##
+
 KW = datetime.date(int(Jahr), int(mon), int(ersterTag)).isocalendar()[1]
 print('Die Kalenderwoche:', KW)
