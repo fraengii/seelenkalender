@@ -66,14 +66,14 @@ for i in range(0, 52):
     if a != -1:
         WSpruch = ispruch
 
+main = Tk()
 def danke():
 	main.destroy()
 
-main = Tk()
 msg = Message(main, text = WSpruch)
 msg.pack()
 
-d = main.Button(main, text = "Danke", command = danke())
+d = Button(main, text = "Danke", command = danke)
 d.pack()
 
 mainloop()
