@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import datetime, sys, os
+from tkinter import *
 from time import *
 
 lt = localtime()
@@ -63,5 +64,16 @@ for i in range(0, 52):
     ispruch = gesamt[i]
     a = ispruch.find(str(WS))
     if a != -1:
-        print(ispruch)
+        WSpruch = ispruch
 
+def danke():
+	main.destroy()
+
+main = Tk()
+msg = Message(main, text = WSpruch)
+msg.pack()
+
+d = main.Button(main, text = "Danke", command = danke())
+d.pack()
+
+mainloop()
