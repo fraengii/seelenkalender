@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# coding=utf-8
 import datetime, sys, os
 from tkinter import *
 from time import *
@@ -24,7 +25,7 @@ if ost > 31:
     tag = april
     mon = 4
 else:
-##        print("Ostersonntag ist der",ost,"te März!",Jahr)
+##print("Ostersonntag ist der",ost,"te März!",Jahr)
         tag = ost
         mon = 3
         
